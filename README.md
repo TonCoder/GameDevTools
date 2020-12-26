@@ -6,6 +6,7 @@ A set of scripts that help make development smoother.
 The ```SimplePoolManager``` script is to be attached to a GameObject on the Scene. Upon attaching the script, you will be able to add and remove items from the list in which you want to instantiate. Each _POOL_ added is its own collection.
 
 SimplePoolManager Editor example:
+
 ![image](https://user-images.githubusercontent.com/12915760/103145427-45b91500-4708-11eb-972c-b6f017faff0b.png)
 
 The SimplePoolManager runs as a _SINGLETON_ class, in which can be accessed by any other custom class.
