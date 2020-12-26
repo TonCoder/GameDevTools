@@ -2,23 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Timer", menuName = "AngryLab/Game System/Settings/Timer")]
-public class SO_Timer : ScriptableObject
+namespace AngryLab
 {
-    private float _elapsedTime = 0;
-    private float seconds;
-
-    internal string Tick()
+    [CreateAssetMenu(fileName = "Timer", menuName = "AngryLab/Game System/Settings/Timer")]
+    public class SO_Timer : ScriptableObject
     {
-        _elapsedTime += Time.deltaTime;
-        int minutes = Mathf.FloorToInt(_elapsedTime / 60F);
-        seconds += Time.deltaTime;
+        private float _elapsedTime = 0;
+        private float seconds;
 
-        if (seconds >= 60)
+        internal string Tick()
         {
-            seconds = 0;
-        }
-        return string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
+            _elapsedTime += Time.deltaTime;
+            int minutes = Mathf.FloorToInt(_elapsedTime / 60F);
+            seconds += Time.deltaTime;
 
+            if (seconds >= 60)
+            {
+                seconds = 0;
+            }
+            return string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
+
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 namespace AngryLab
 {
     [RequireComponent(typeof(AudioSource), typeof(KillableEvents))]
-    public abstract class Killable_Controller : MonoBehaviour
+    public abstract class Ab_Killable_Controller : MonoBehaviour
     {
         [SerializeField] internal SO_Killable _properties;
 
@@ -113,9 +113,5 @@ namespace AngryLab
             _asource.pitch = Random.Range(pitchRange.x, pitchRange.y);
             _asource.PlayOneShot(clip[randomInt], volume);
         }
-
-        Color GetRed() =>  Color.red;
-        Color GetGreen() =>  Color.green;
-
     }
 }

@@ -2,6 +2,5 @@
 {
     Weapon,
     Consumable,
-    Mask,
-    Character
+    Projectile
 }

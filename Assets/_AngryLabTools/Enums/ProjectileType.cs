@@ -4,5 +4,6 @@ public enum ProjectileType
     normal,
     power,
     poison,
-    freeze
+    freeze,
+    slow
 }
