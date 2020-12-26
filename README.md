@@ -31,7 +31,7 @@ The following are the actions under the SimplePoolManager:
 
 ### Editor
 - Watch_ConvertImageToSprite.cs 
- - This script "watches" for any image that is placed in a folder named "Sprite" or "Sprites" and automatically converts it to a Sprity type with default settings.
+  - This script "watches" for any image that is placed in a folder named "Sprite" or "Sprites" and automatically converts it to a Sprity type with default settings.
 
 ### Enums
 Holds all Enumerator files that can be used to simplify comparisons or specific actions
