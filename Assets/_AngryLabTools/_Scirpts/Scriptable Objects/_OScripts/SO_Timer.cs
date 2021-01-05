@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Timer", menuName = "AngryLab/Game System/Settings/Timer")]
+[CreateAssetMenu(fileName = "Timer", menuName = "AngryLab/Game System/Timer")]
 public class SO_Timer : ScriptableObject
 {
     private float _elapsedTime = 0;

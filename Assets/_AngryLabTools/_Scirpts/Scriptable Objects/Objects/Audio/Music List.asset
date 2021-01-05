@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86616e933511e3d4b84b79957a3a42d0, type: 3}
+  m_Name: Music List
+  m_EditorClassIdentifier: 
+  musicList:
+  - _sceneName: 00_Title
+    _audioClip: {fileID: 8300000, guid: 8392db208493cbb449c75f991eba679f, type: 3}
+  - _sceneName: 00b_Loading
+    _audioClip: {fileID: 8300000, guid: 8408d2562f3087e4a9cd1662993f3927, type: 3}
+  - _sceneName: 01_CharacterSelect
+    _audioClip: {fileID: 8300000, guid: c0df14d95ff6fa5458f3d74d9c49bf8e, type: 3}
+  - _sceneName: Testing_LoadCharacter
+    _audioClip: {fileID: 8300000, guid: 8392db208493cbb449c75f991eba679f, type: 3}

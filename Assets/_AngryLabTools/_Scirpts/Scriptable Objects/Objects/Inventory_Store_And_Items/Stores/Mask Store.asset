@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc1e69bc918ed240b3ae717774e40c3, type: 3}
+  m_Name: Mask Store
+  m_EditorClassIdentifier: 
+  storeName: The Face Swap
+  storeType: 2
+  storeGoods: {fileID: 11400000, guid: 3160396b1ea65ac4d9776681c478b4d3, type: 2}

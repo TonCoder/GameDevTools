@@ -6,7 +6,7 @@ namespace AngryLab
     [RequireComponent(typeof(AudioSource), typeof(KillableEvents))]
     public abstract class Killable_Controller : MonoBehaviour
     {
-        [SerializeField] internal SO_Killable _properties;
+        [SerializeField] internal SO_Killable_Props _properties;
 
         [Space(10), Header("Other Settings")]
         [SerializeField] internal AudioSource _asource;

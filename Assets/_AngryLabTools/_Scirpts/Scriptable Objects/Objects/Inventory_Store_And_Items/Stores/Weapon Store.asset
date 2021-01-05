@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc1e69bc918ed240b3ae717774e40c3, type: 3}
+  m_Name: Weapon Store
+  m_EditorClassIdentifier: 
+  storeName: The Happy Trigger
+  storeGoods: {fileID: 11400000, guid: bb54257c13e78874d8b4fe3655e0aed4, type: 2}

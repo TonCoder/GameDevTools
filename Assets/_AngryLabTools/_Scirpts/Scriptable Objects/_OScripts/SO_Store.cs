@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "AngryLab/Game System/Store and Inv/New Store", fileName = "New Store")]
-public class SO_Store : ScriptableObject
+namespace AngryLab
 {
-    [SerializeField] internal string storeName;
-    [SerializeField] internal EItemType storyType;
-    [SerializeField] internal SO_Inventory storeGoods;
-    private int currentStoreIndx = 0;
-
-    internal Ab_BaseItemInfo GetItemByIndx(int indx)
+    [CreateAssetMenu(menuName = "AngryLab/Store/New Store", fileName = "New Store")]
+    public class SO_Store : ScriptableObject
     {
-        return storeGoods.list[indx];
+        [SerializeField] internal string storeName;
+        [SerializeField] internal EItemType storeType;
+        [SerializeField] internal SO_Inventory storeGoods;
+        private int currentStoreIndx = 0;
+
+        internal SO_Item GetItemByIndx(int indx)
+        {
+            return storeGoods.list[indx];
+        }
     }
 }

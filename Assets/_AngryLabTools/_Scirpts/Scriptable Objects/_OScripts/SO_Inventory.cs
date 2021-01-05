@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "AngryLab/Game System/Store and Inv/Inventory")]
-public class SO_Inventory : ScriptableObject
+namespace AngryLab
 {
-    [SerializeField] internal List<Ab_BaseItemInfo> list = new List<Ab_BaseItemInfo>();
-
-    internal void Add(Ab_BaseItemInfo item)
+    [CreateAssetMenu(fileName = "New Item", menuName = "AngryLab/Inventory/Inventory")]
+    public class SO_Inventory : ScriptableObject
     {
-        list.Add(item);
-    }
+        [SerializeField] internal List<SO_Item> list = new List<SO_Item>();
 
-    internal void RemoveItem(Ab_BaseItemInfo item)
-    {
-        list.Remove(item);
+        internal void Add(SO_Item item)
+        {
+            list.Add(item);
+        }
+
+        internal void RemoveItem(SO_Item item)
+        {
+            list.Remove(item);
+        }
     }
 }

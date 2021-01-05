@@ -1,8 +1,8 @@
 ﻿[System.Serializable]
 public enum ProjectileType
 {
-    normal,
-    power,
-    poison,
-    freeze
+    Normal,
+    Power,
+    Poison,
+    Freeze
 }

@@ -1,12 +1,18 @@
-﻿[System.Serializable]
+﻿
+/// <summary>
+///  This is an Enum of all the animations
+/// </summary>
+[System.Serializable]
 public enum EAnimationStates
 {
-    idle,
-    maskShowcase,
-    weaponShowcase,
-    cheering,
-    throwGranade,
-    reload,
-    damage,
-    death
+    Moving,
+    Idle,
+    MaskShowcase,
+    WeaponShowcase,
+    Shooting,
+    Cheering,
+    ThrowGranade,
+    Reload,
+    Damage,
+    Death
 }
