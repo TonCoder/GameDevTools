@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68d48fa9eb6b484fa0244e4de336dba, type: 3}
+  m_Name: Killable Props
+  m_EditorClassIdentifier: 
+  _despawnTime: 0.5
+  _isPlayer: 0
+  _hp: 400
+  _maxHp: 500
+  _armor: 100
+  _maxArmor: 500
+  _moveSpeed: 6
+  _turnSpeed: 7
+  _desc: Testing the things
+  _hitSoundFx: {fileID: 11400000, guid: 97a258e0238d36742b9e7cb4082c67d4, type: 2}
+  _deathSoundFx: {fileID: 11400000, guid: 9101e9e0bf55d81469869858aad2482b, type: 2}
+  _healSoundFx: {fileID: 11400000, guid: 984dd4363153a7046a1df437c9dcb9bd, type: 2}
+  _skills: []

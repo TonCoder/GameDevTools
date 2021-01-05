@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b090e8234a2657439732a1786283791, type: 3}
+  m_Name: Machine_Shoot_Fx
+  m_EditorClassIdentifier: 
+  _soundVolume: 0.8
+  _pitch: {x: 0.9522863, y: 1}
+  _soundClip:
+  - {fileID: 8300000, guid: 203f3377b9dcd2b4b8ea61a640ad4bd3, type: 3}
+  - {fileID: 8300000, guid: e368e21c5acb2b940b2cae8c044e69a3, type: 3}
+  - {fileID: 8300000, guid: 9e3646cf6a343d34ba3e3dcac18692aa, type: 3}
+  - {fileID: 8300000, guid: 3954032c859539d489e36ffe9071f8c4, type: 3}

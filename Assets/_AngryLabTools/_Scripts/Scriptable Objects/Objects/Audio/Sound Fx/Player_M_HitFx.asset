@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b090e8234a2657439732a1786283791, type: 3}
+  m_Name: Player_M_HitFx
+  m_EditorClassIdentifier: 
+  _soundVolume: 0.95
+  _pitch: {x: 0.63419485, y: 0.7375746}
+  _soundClip:
+  - {fileID: 8300000, guid: 6633f6419c631eb45b97c2547c2423b4, type: 3}
+  - {fileID: 8300000, guid: e208f406bea43ba4da32c0d76a7435bc, type: 3}
+  - {fileID: 8300000, guid: b2a8660cec6edb04e9d35fe426c76f53, type: 3}
+  - {fileID: 8300000, guid: dc75fe51afc5464408734f0273741102, type: 3}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68d48fa9eb6b484fa0244e4de336dba, type: 3}
+  m_Name: The Tank
+  m_EditorClassIdentifier: 
+  _despawnTime: 0.5
+  _isPlayer: 1
+  _hp: 400
+  _maxHp: 401
+  _armor: 103
+  _maxArmor: 500
+  _moveSpeed: 5.11
+  _turnSpeed: 6.05
+  _desc: 'The Tank.
+
+    Not afraid of jumping into the fight, nor taking a hit.
+    Although his movements are slow, he makes up in health.'
+  _hitSoundFx: {fileID: 11400000, guid: 7428add368511954ea8b9b0757b84974, type: 2}
+  _deathSoundFx: {fileID: 11400000, guid: efdd5c45637dc304fb8cf62764c58f0d, type: 2}
+  _healSoundFx: {fileID: 11400000, guid: 984dd4363153a7046a1df437c9dcb9bd, type: 2}
+  _skills: []

@@ -1,13 +1,22 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AngryLab
 {
-    [CreateAssetMenu(menuName = "AngryLab/Game System/Settings/GameSettings", fileName = "Game Settings")]
+    [CreateAssetMenu(menuName = "AngryLab/Settings/GameSettings", fileName = "Game Settings")]
     public class SO_GeneralSettings : ScriptableObject
     {
-        [SerializeField, TextArea(3, 5)] internal string _info = "";
-        [SerializeField] internal string _fbLink = "facebook.com";
-        [SerializeField] internal string _tweetLink = "twitter.com";
-        [SerializeField] internal string _store = "storeName";
+        [SerializeField] internal int musicVol = 20;
+        [SerializeField] internal int fxVol = 20;
+        [SerializeField] internal string dateTimeVal = DateTime.Now.ToString("HHmmss");
+        [SerializeField] internal List<GameScore> gameScore = new List<GameScore>();
+    }
+
+    [System.Serializable]
+    public class GameScore
+    {
+        public string name;
+        public int score;
     }
 }

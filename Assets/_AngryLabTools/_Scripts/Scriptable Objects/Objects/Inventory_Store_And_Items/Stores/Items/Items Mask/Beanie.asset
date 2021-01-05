@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c70e486c33317b743bfef3f7e39c551f, type: 3}
+  m_Name: Beanie
+  m_EditorClassIdentifier: 
+  type: 2
+  itemPrefab: {fileID: 160394, guid: 998ad100d4990e64fa392a818adf1a8c, type: 3}
+  itemId: 786946594245
+  description: 'Something about this Beanie makes things feel nostalgic... hmmm might
+    give you the same effect as it did those who wore it back in the days.
+
+    It
+    was said that it can help with movement and look.... "tough"?'
+  price: 1300
+  salePrice: 590
+  showHair: 1
+  showEyeBrows: 0
+  healthBoost: 1
+  moveSpeedBoost: 1
+  damageBoost: 0

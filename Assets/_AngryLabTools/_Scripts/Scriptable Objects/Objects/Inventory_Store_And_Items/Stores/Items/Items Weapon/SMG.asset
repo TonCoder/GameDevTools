@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042835cd7dee50946a95f0479c8e2343, type: 3}
+  m_Name: SMG
+  m_EditorClassIdentifier: 
+  type: 0
+  itemPrefab: {fileID: 123254, guid: cafa32a2c685de9479351ae1dfed94df, type: 3}
+  itemId: 74574
+  description: 'Zippy tap tap:
+
+
+    Damage: 15
+
+    Fire Rate: Fastest'
+  price: 4500
+  salePrice: 2200
+  isMelee: 0
+  isPistol: 0
+  damage: 15
+  fireRate: 0.159
+  soundFx: {fileID: 11400000, guid: 24041ac488a4c994ab355fc46f3c462f, type: 2}
+  bullet: {fileID: 6240229616540975516, guid: 901382c5d97df924394bea5db274687c, type: 3}
+  specialBullet: {fileID: 8883268061119296020, guid: 228b5cffdd2b8f243998dd80b35ac4d9,
+    type: 3}

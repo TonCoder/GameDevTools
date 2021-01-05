@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042835cd7dee50946a95f0479c8e2343, type: 3}
+  m_Name: AK
+  m_EditorClassIdentifier: 
+  type: 0
+  itemPrefab: {fileID: 767118919244227674, guid: c5776b1418fc7fa42bd510af83b0c58b,
+    type: 3}
+  itemId: 
+  description: 'Staying old school.
+
+
+    Damage: 20
+
+    Fire Rate: Moderate
+
+'
+  price: 0
+  salePrice: 0
+  isMelee: 0
+  isPistol: 0
+  damage: 20
+  fireRate: 0.364
+  soundFx: {fileID: 11400000, guid: 79fa7dcc70fd8684092c47cc33532499, type: 2}
+  bullet: {fileID: 6240229616540975516, guid: 901382c5d97df924394bea5db274687c, type: 3}
+  specialBullet: {fileID: 8883268061119296020, guid: 228b5cffdd2b8f243998dd80b35ac4d9,
+    type: 3}
