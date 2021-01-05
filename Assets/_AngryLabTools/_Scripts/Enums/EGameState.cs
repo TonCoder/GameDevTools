@@ -1,7 +1,8 @@
 ﻿[System.Serializable]
 public enum EGameState
 {
-    GameStarted,
+    Active,
     GameOver,
-    GameWon
+    GameWon,
+    GamePaused
 }
