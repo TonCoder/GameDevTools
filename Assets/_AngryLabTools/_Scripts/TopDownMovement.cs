@@ -15,7 +15,7 @@ namespace HeistEscape
         [SerializeField] private bool isMobile = false;
 
         [Header("Movement Settings")]
-        [SerializeField] private Rigidbody _rigidbody;
+        [SerializeField] private Rigidbody rbody;
         [SerializeField] private UEvents.EVector2 OnUpdateAnim;
 
         //private MMTouchJoystick moveJoyStick;
@@ -41,7 +41,7 @@ namespace HeistEscape
         {
             movementSpeed = character_props.MoveSpeed;
 
-            _rigidbody = _rigidbody ? _rigidbody : GetComponent<Rigidbody>();
+            rbody = rbody ? rbody : GetComponent<Rigidbody>();
             cam = Camera.main;
         }
 
@@ -83,7 +83,7 @@ namespace HeistEscape
             NormalizeDirectionForAnimation(move);
 
             Vector3 newPos = new Vector3(joyMovePos.x, 0, joyMovePos.y);
-            _rigidbody.MovePosition(_rigidbody.position + newPos * movementSpeed * Time.deltaTime);
+            rbody.MovePosition(rbody.position + newPos * movementSpeed * Time.deltaTime);
         }
 
         void CheckDevice()
@@ -125,13 +125,12 @@ namespace HeistEscape
 
         private void NormalizeDirectionForAnimation(Vector3 move)
         {
-            // if magnitude is grater than 1 then normalize it
+            // Normalize magnitude to avoid speeding up when moving diagonally
             if (move.magnitude > 1)
             {
                 move.Normalize();
             }
 
-            // 
             TransformDirectionToLocalSpace(move);
         }
 

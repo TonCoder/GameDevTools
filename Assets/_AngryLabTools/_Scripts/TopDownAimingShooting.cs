@@ -14,7 +14,7 @@ namespace HeistEscape
         [SerializeField] private bool isMobile = false;
 
         [Header("Aiming Setup")]
-        [SerializeField] private Rigidbody _rigidbody;
+        [SerializeField] private Rigidbody rbody;
         [SerializeField] private bool isUsingMouse = false;
         [SerializeField] private LayerMask hitLayer;
         //[SerializeField, Sirenix.OdinInspector.ReadOnly] private MMTouchJoystick rightJoyStick;
@@ -24,9 +24,9 @@ namespace HeistEscape
         public UEvents.EBool OnCanShoot;
 
         private InputHandler inputHandler;
-        private Camera _camera;
+        private Camera camera;
         private Vector3 joyPos;
-        private float _turnSpeed;
+        private float turnSpeed;
         private bool canShoot = false;
 
         private void Awake()
@@ -36,10 +36,9 @@ namespace HeistEscape
 
         void Start()
         {
-            _turnSpeed = character_props.TurnSpeed;
-
-            _camera = _camera? _camera : Camera.main;
-            _rigidbody = _rigidbody ? _rigidbody : GetComponent<Rigidbody>();
+            turnSpeed = character_props.TurnSpeed;
+            camera = camera? camera : Camera.main;
+            rbody = rbody ? rbody : GetComponent<Rigidbody>();
         }
 
         private void OnEnable()
@@ -85,9 +84,22 @@ namespace HeistEscape
             OnCanShoot?.Invoke(false);
         }
 
-        public void SetTurnSpeed(float val)
+        public void AimDirection(Vector2 move)
         {
-            _turnSpeed = val;
+            joyPos = move;
+        }
+
+        public void AimDirection(InputAction.CallbackContext context)
+        {
+            var contextPos = context.ReadValue<Vector2>();
+            //var contextPos = Input.mousePosition;
+            Ray castPoint = camera.ScreenPointToRay(contextPos);
+
+            RaycastHit hit;
+            if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, hitLayer))
+            {
+                joyPos = hit.point;
+            }
         }
 
         void CheckDevice()
@@ -107,33 +119,20 @@ namespace HeistEscape
             }
         }
 
-        public void AimDirection(Vector2 move)
+        public void SetTurnSpeed(float val)
         {
-            joyPos = move;
-        }
-
-        public void AimDirection(InputAction.CallbackContext context)
-        {
-            var contextPos = context.ReadValue<Vector2>();
-            //var contextPos = Input.mousePosition;
-            Ray castPoint = _camera.ScreenPointToRay(contextPos);
-
-            RaycastHit hit;
-            if (Physics.Raycast(castPoint, out hit, Mathf.Infinity, hitLayer))
-            {
-                joyPos = hit.point;
-            }
+            turnSpeed = val;
         }
 
         void TurnTowards()
         {
-            Vector3 lookDir = isMobile ? new Vector3(joyPos.x, 0, joyPos.y) - _rigidbody.transform.position : joyPos - _rigidbody.transform.position;
+            Vector3 lookDir = isMobile ? new Vector3(joyPos.x, 0, joyPos.y) - rbody.transform.position : joyPos - rbody.transform.position;
             lookDir.y = 0;
 
             // var rotateTo = Quaternion.RotateTowards(_rigidbody.rotation, Quaternion.LookRotation(-lookDir), Time.deltaTime * characterInfo.TurnSpeed);
 
-            Quaternion rotateTo = Quaternion.Lerp(_rigidbody.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * _turnSpeed);
-            _rigidbody.rotation = rotateTo;
+            Quaternion rotateTo = Quaternion.Lerp(rbody.rotation, Quaternion.LookRotation(lookDir), Time.deltaTime * turnSpeed);
+            rbody.rotation = rotateTo;
         }
     }
 }

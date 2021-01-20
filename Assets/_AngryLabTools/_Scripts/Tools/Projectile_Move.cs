@@ -49,7 +49,7 @@ namespace AngryLab
                 if (timer >= despawnTimer)
                 {
                     timer = 0;
-                    SimplePoolManager.instance.DisablePoolObject(transform);
+                    SPManager.instance.DisablePoolObject(transform);
                 }
             }
         }
