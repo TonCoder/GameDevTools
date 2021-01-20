@@ -10,6 +10,8 @@ SimplePoolManager Editor example:
 ![image](https://user-images.githubusercontent.com/12915760/103145427-45b91500-4708-11eb-972c-b6f017faff0b.png)
 
 The SimplePoolManager runs as a _SINGLETON_ class, in which can be accessed by any other custom class.
+NOTE: IT IS NOT PERSISTENT.  - DontDestroyOnLoad - is NOT being called on it. This is to avoid dependency and ensure every SCENE is a FRESH start.
+
 The following are the actions under the SimplePoolManager:
  
 | Actions | Parameters | Notes|
