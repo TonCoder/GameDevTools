@@ -3,7 +3,7 @@ A set of scripts that help make development smoother.
 
 ### SimplePoolManager
 ##### A simple pooling system that allows reusability and flexibility when requiring multiple instance of the same object (eg: Bullets, sounds, sparks, etc)
-The ```SimplePoolManager``` script is to be attached to a GameObject on the Scene. Upon attaching the script, you will be able to add and remove items from the list in which you want to instantiate. Each _POOL_ added is its own collection.
+The ```SPManager``` aka SimplePoolManager script is to be attached to a GameObject on the Scene. Upon attaching the script, you will be able to add and remove items from the list in which you want to instantiate. Each _POOL_ added is its own collection.
 
 SimplePoolManager Editor example:
 
