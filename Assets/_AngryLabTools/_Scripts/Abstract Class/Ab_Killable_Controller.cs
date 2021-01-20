@@ -3,6 +3,11 @@ using UnityEngine;
 
 namespace AngryLab
 {
+    /// <summary>
+    /// Inherit from this class in order to set the default actions/values for any charater/object
+    /// Saves time for general actions such as Add Health, Take Damage, and Fx on hit.
+    /// This script also requires the Killable Events class that will be used to trigger any of the specified actions
+    /// </summary>
     [RequireComponent(typeof(AudioSource), typeof(KillableEvents))]
     public abstract class Ab_Killable_Controller : MonoBehaviour
     {
@@ -77,7 +82,6 @@ namespace AngryLab
             }
             return 0;
         }
-
 
         public virtual void AddArmor(float value)
         {

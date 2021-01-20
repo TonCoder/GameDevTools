@@ -28,7 +28,7 @@ namespace AngryLab
 				if (TimeToDespawn <= 0)
 				{
 					TimeToDespawn = originalTimeToDespawn;
-					SimplePoolManager.instance.DisablePoolObject(gameObject.transform);
+					SPManager.instance.DisablePoolObject(gameObject.transform);
 				}
 
 			}

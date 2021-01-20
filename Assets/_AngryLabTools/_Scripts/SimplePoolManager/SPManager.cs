@@ -19,9 +19,9 @@ namespace AngryLab
 
 namespace AngryLab
 {
-    public class SimplePoolManager : MonoBehaviour
+    public class SPManager : MonoBehaviour
     {
-        public static SimplePoolManager instance;
+        public static SPManager instance;
 
         [SerializeField] private List<PoolCollection> collection = new List<PoolCollection>();
 
@@ -216,12 +216,13 @@ namespace AngryLab
             return itemFound;
         }
 
+
         //****************************
         // Add to pool Actions
         //****************************
 
         ///<sumarry>
-        /// This function does not permanently save the item it adds, it only adds it for run time
+        /// This function does not permanently save the item it adds, it only adds it in run time
         ///</sumarry>
         internal void AddNewItemToCollection(List<PoolCollection> newItemCol)
         {

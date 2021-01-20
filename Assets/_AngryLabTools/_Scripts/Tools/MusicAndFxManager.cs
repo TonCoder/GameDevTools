@@ -12,6 +12,7 @@ using UnityEngine.SceneManagement;
 public class MusicAndFxManager : MonoBehaviour
 {
     public static MusicAndFxManager instance;
+
     [Header("General Settings")]
     [SerializeField] private SO_GeneralSettings gameSettings;
 
